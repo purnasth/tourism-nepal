@@ -1,15 +1,14 @@
-import React from 'react'
+import React from 'react';
+import MapComponent from '../components/MapComponent';
+import Navbar from '../components/Navbar';
 
-const Home:React.FC = () => {
+const Homepage: React.FC = () => {
   return (
     <>
-      <main className="flex h-screen w-full items-center justify-center">
-        <h1 className="text-center font-serif text-5xl capitalize">
-          Welcome to Tourism Nepal
-        </h1>
-      </main>
+      <Navbar />
+      <MapComponent />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Homepage;
