@@ -6,17 +6,19 @@ import {
   Navigate,
 } from 'react-router-dom';
 import Home from './pages/Home';
-import RouterToTop from './utils/RouterToTop';
 import LoginForm from './components/LoginForm';
+import NearbyAttractions from './pages/NearbyAttractions';
+import Navbar from './components/Navbar';
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
-        <RouterToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
+          <Route path="explore" element={<NearbyAttractions />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

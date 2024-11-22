@@ -19,7 +19,7 @@ const navLinks = [
 const Navbar: React.FC = () => {
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-white p-4 text-dark shadow-lg backdrop-blur-sm">
+      <header className="fixed left-0 top-0 z-40 flex w-full items-center justify-between bg-white p-4 text-dark shadow-lg backdrop-blur-sm">
         <div className="flex items-center space-x-2">
           <img
             src="https://via.placeholder.com/40"
